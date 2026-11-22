@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- WRITE YOUR WEBSITE TITLE HERE -->
+  <title>Preet Singh | Junior Full Stack Developer</title>
+  <meta name="description" content="Personal portfolio website of Preet Singh, Junior Full Stack Developer skilled in PHP, Laravel, React.js, and MySQL.">
+  <meta property="og:title" content="Preet Singh | Junior Full Stack Developer">
+  <meta property="og:description" content="Personal portfolio website of Preet Singh, Junior Full Stack Developer.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display for headings, Poppins for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR START ===== -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- WRITE YOUR BRAND NAME HERE -->
+      <a class="navbar-brand brand-logo" href="#home">Preet<span>.</span></a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ===== NAVBAR END ===== -->
+
+
+  <!-- ===== HERO SECTION START ===== -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <!-- Small Greeting -->
+          <p class="hero-subtitle hero-animate">Hello, I am</p>
+
+          <!-- WRITE YOUR NAME HERE -->
+          <h1 class="hero-title hero-animate">Preet Singh</h1>
+
+          <!-- Typing Effect Tagline -->
+          <h2 class="hero-tagline hero-animate">
+            I am a <span id="typingText" class="gold-text"></span><span class="cursor">|</span>
+          </h2>
+
+          <!-- Short Intro Line -->
+          <p class="hero-desc hero-animate">
+            <!-- WRITE YOUR SHORT TAGLINE HERE -->
+            Building clean, reliable web applications with PHP, Laravel, React.js &amp; MySQL.
+          </p>
+
+          <!-- Hero Buttons -->
+          <div class="hero-buttons hero-animate mt-4">
+            <a href="#contact" class="btn btn-gold me-3 mb-2">
+              <i class="bi bi-envelope-fill me-2"></i>Hire Me
+            </a>
+            <!-- Put your PDF inside the "resume" folder with this exact file name -->
+            <a href="resume/Preet_Singh_Resume_Developer.pdf" download class="btn btn-outline-gold mb-2">
+              <i class="bi bi-download me-2"></i>Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== HERO SECTION END ===== -->
+
+
+  <!-- ===== ABOUT SECTION START ===== -->
+  <section id="about" class="section-padding bg-offwhite fade-section">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">About Me</h2>
+        <div class="gold-line mx-auto"></div>
+      </div>
+
+      <div class="row align-items-center g-4">
+        <!-- Profile Image Column -->
+        <div class="col-lg-5 text-center">
+          <div class="about-img-box">
+            <!-- Put your profile photo inside the "images" folder and name it profile.jpg -->
+            <img src="images/profile.jpg" alt="Preet Singh Photo" class="img-fluid about-img">
+          </div>
+        </div>
+
+        <!-- About Text & Personal Info Column -->
+        <div class="col-lg-7">
+          <div class="royal-card p-4 p-md-5">
+            <!-- WRITE YOUR TITLE HERE -->
+            <h3 class="about-heading mb-3">Junior Full Stack Developer</h3>
+
+            <!-- WRITE YOUR ABOUT ME PARAGRAPH HERE -->
+            <p class="about-text mb-4">
+              Entry-level Full Stack Developer with 6 months of internship experience in PHP, Laravel, React.js and MySQL. Comfortable with Git/GitHub and SQL, and a reliable team member who meets deadlines. ITI-COPA qualified and pursuing MCA (Machine Learning &amp; AI) at Amity University. Seeking a Junior PHP / Laravel / React Developer role.
+            </p>
+
+            <!-- Personal Details Grid -->
+            <div class="row g-3 info-list">
+              <!-- Location -->
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <i class="bi bi-geo-alt-fill gold-icon"></i>
+                  <div>
+                    <span class="info-label">Location:</span>
+                    <!-- WRITE YOUR LOCATION HERE -->
+                    <p class="info-value">Muradnagar, Ghaziabad, U.P. 201206</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <i class="bi bi-envelope-fill gold-icon"></i>
+                  <div>
+                    <span class="info-label">Email:</span>
+                    <!-- WRITE YOUR EMAIL HERE -->
+                    <p class="info-value">
+                      <a href="mailto:08preetsingh@gmail.com">08preetsingh@gmail.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <i class="bi bi-telephone-fill gold-icon"></i>
+                  <div>
+                    <span class="info-label">Phone:</span>
+                    <!-- WRITE YOUR PHONE NUMBER HERE -->
+                    <p class="info-value">
+                      <a href="tel:+917668773937">+91 7668773937</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <div class="col-sm-6">
+                <div class="info-item">
+                  <i class="bi bi-translate gold-icon"></i>
+                  <div>
+                    <span class="info-label">Languages:</span>
+                    <!-- WRITE YOUR LANGUAGES HERE -->
+                    <p class="info-value">Hindi, English</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== ABOUT SECTION END ===== -->
+
+
+  <!-- ===== SKILLS SECTION START ===== -->
+  <section id="skills" class="section-padding bg-navy-light fade-section">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title text-white">My Skills</h2>
+        <div class="gold-line mx-auto"></div>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <!-- Note: You can easily edit the skill names and percentages (data-width) below -->
+      <div class="row g-4">
+
+        <!-- Skill Card 1: Frontend -->
+        <div class="col-md-6">
+          <div class="royal-dark-card p-4 h-100">
+            <h4 class="card-sub-title mb-4"><i class="bi bi-code-slash me-2"></i>Frontend Development</h4>
+
+            <!-- Skill Item 1 (Copy-paste to add more) -->
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="skill-name">HTML, CSS</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="progress skill-progress">
+                <!-- Change data-width to edit percentage -->
+                <div class="progress-bar skill-bar" role="progressbar" data-width="85%"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item 2 -->
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="progress skill-progress">
+                <div class="progress-bar skill-bar" role="progressbar" data-width="70%"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item 3 -->
+            <div class="skill-item mb-1">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="skill-name">React.js</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="progress skill-progress">
+                <div class="progress-bar skill-bar" role="progressbar" data-width="65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Card 2: Backend, Database & Tools -->
+        <div class="col-md-6">
+          <div class="royal-dark-card p-4 h-100">
+            <h4 class="card-sub-title mb-4"><i class="bi bi-database-fill me-2"></i>Backend, Database &amp; Tools</h4>
+
+            <!-- Skill Item 4 -->
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="skill-name">PHP</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="progress skill-progress">
+                <div class="progress-bar skill-bar" role="progressbar" data-width="75%"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item 5 -->
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="skill-name">Laravel</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="progress skill-progress">
+                <div class="progress-bar skill-bar" role="progressbar" data-width="65%"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item 6 -->
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="skill-name">MySQL, SQL</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="progress skill-progress">
+                <div class="progress-bar skill-bar" role="progressbar" data-width="75%"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item 7 -->
+            <div class="skill-item mb-1">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="skill-name">Git, GitHub</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="progress skill-progress">
+                <div class="progress-bar skill-bar" role="progressbar" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Additional Skill Badges -->
+      <div class="text-center mt-5">
+        <h5 class="text-white mb-3">Other Tools &amp; Knowledge</h5>
+        <div class="skill-badges">
+          <!-- Copy-paste a span below to add another badge -->
+          <span class="badge skill-badge">C#</span>
+          <span class="badge skill-badge">MS Word</span>
+          <span class="badge skill-badge">Data Entry</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SKILLS SECTION END ===== -->
+
+
+  <!-- ===== RESUME SECTION START ===== -->
+  <section id="resume" class="section-padding bg-offwhite fade-section">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Resume</h2>
+        <div class="gold-line mx-auto"></div>
+        <p class="section-subtitle text-muted">My Experience, Education &amp; Certifications</p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Experience Column -->
+        <div class="col-lg-6">
+          <h3 class="resume-column-title mb-4">
+            <i class="bi bi-briefcase-fill me-2 gold-icon"></i>Experience
+          </h3>
+
+          <div class="timeline">
+            <!-- Timeline Item: Experience 1 (Copy-paste to add more) -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content royal-card p-4">
+                <span class="timeline-date">Nov 2024 - May 2025</span>
+                <h4 class="timeline-title">Full Stack Developer Intern</h4>
+                <h5 class="timeline-place">Astertech Universe</h5>
+                <ul class="timeline-list mt-2 mb-0">
+                  <li>Maintained content and data for company and airline-related websites, keeping information accurate and up to date</li>
+                  <li>Performed database operations (insert, update, retrieve, organize records) using MySQL and SQL</li>
+                  <li>Documented daily tasks, code changes and project work clearly</li>
+                  <li>Coordinated with the team to resolve issues and deliver tasks on time</li>
+                  <li>Handled multiple tasks at once while maintaining accuracy and meeting deadlines</li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Experience 1 -->
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="col-lg-6">
+          <h3 class="resume-column-title mb-4">
+            <i class="bi bi-mortarboard-fill me-2 gold-icon"></i>Education
+          </h3>
+
+          <div class="timeline">
+            <!-- Timeline Item: Education 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content royal-card p-3">
+                <span class="timeline-date">2026 - 2028 (Pursuing)</span>
+                <h4 class="timeline-title">MCA - Machine Learning &amp; AI</h4>
+                <h5 class="timeline-place mb-0">Amity University, Noida</h5>
+              </div>
+            </div>
+
+            <!-- Timeline Item: Education 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content royal-card p-3">
+                <span class="timeline-date">2023</span>
+                <h4 class="timeline-title">B.A. (Bachelor of Arts)</h4>
+                <h5 class="timeline-place mb-0">C.C.S. University, Meerut</h5>
+              </div>
+            </div>
+
+            <!-- Timeline Item: Education 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content royal-card p-3">
+                <span class="timeline-date">2021 | 81%</span>
+                <h4 class="timeline-title">ITI - COPA (Computer Operator &amp; Programming Assistant)</h4>
+                <h5 class="timeline-place mb-0">ITI Government College, Muradnagar</h5>
+              </div>
+            </div>
+
+            <!-- Timeline Item: Education 4 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content royal-card p-3">
+                <span class="timeline-date">2018 | 56.4%</span>
+                <h4 class="timeline-title">12th Standard</h4>
+                <h5 class="timeline-place mb-0">U.P. Board</h5>
+              </div>
+            </div>
+
+            <!-- Timeline Item: Education 5 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content royal-card p-3">
+                <span class="timeline-date">2016 | 68.6%</span>
+                <h4 class="timeline-title">10th Standard</h4>
+                <h5 class="timeline-place mb-0">U.P. Board</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Subsection -->
+      <div class="mt-5 pt-3">
+        <h3 class="resume-column-title text-center mb-4">
+          <i class="bi bi-award-fill me-2 gold-icon"></i>Certifications
+        </h3>
+
+        <div class="row g-4">
+          <!-- Certificate Card 1 (Copy-paste to add more) -->
+          <div class="col-md-6 col-lg-4">
+            <div class="royal-card cert-card p-4 h-100">
+              <span class="cert-year">2024</span>
+              <h5 class="cert-title mt-2">Full Stack Developer Certification</h5>
+              <p class="cert-org mb-0">All India Computer Training Association</p>
+            </div>
+          </div>
+
+          <!-- Certificate Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="royal-card cert-card p-4 h-100">
+              <span class="cert-year">2025</span>
+              <h5 class="cert-title mt-2">AI Certificate</h5>
+              <p class="cert-org mb-0">Microsoft</p>
+            </div>
+          </div>
+
+          <!-- Certificate Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="royal-card cert-card p-4 h-100">
+              <span class="cert-year">2025</span>
+              <h5 class="cert-title mt-2">C# Certificate</h5>
+              <p class="cert-org mb-0">Microsoft</p>
+            </div>
+          </div>
+
+          <!-- Certificate Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="royal-card cert-card p-4 h-100">
+              <span class="cert-year">2026</span>
+              <h5 class="cert-title mt-2">Cyber Security Certificate</h5>
+              <p class="cert-org mb-0">Deloitte</p>
+            </div>
+          </div>
+
+          <!-- Certificate Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="royal-card cert-card p-4 h-100">
+              <span class="cert-year">2026</span>
+              <h5 class="cert-title mt-2">What Is Generative AI?</h5>
+              <p class="cert-org mb-0">LinkedIn Learning (NASBA CPE Accredited)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Full Resume Button -->
+      <div class="text-center mt-5">
+        <!-- Place your PDF inside the "resume/" folder and name it Preet_Singh_Resume_Developer.pdf -->
+        <a href="resume/Preet_Singh_Resume_Developer.pdf" download class="btn btn-gold btn-lg">
+          <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>Download Full Resume (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== RESUME SECTION END ===== -->
+
+
+  <!-- ===== PROJECTS SECTION START ===== -->
+  <section id="projects" class="section-padding bg-navy-light fade-section">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title text-white">Projects</h2>
+        <div class="gold-line mx-auto"></div>
+        <p class="section-subtitle">Some of my recent &amp; sample work</p>
+      </div>
+
+      <!-- NOTE: These are sample (placeholder) projects. Replace titles, images, descriptions, and GitHub links with your real projects. -->
+      <div class="row g-4">
+
+        <!-- Project Card 1 (Copy-paste to add more projects) -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <!-- Replace images/project1.jpg with your project screenshot -->
+            <img src="images/project1.jpg" class="card-img-top project-img" alt="Airline Info Website">
+            <div class="card-body d-flex flex-column">
+              <!-- WRITE PROJECT NAME HERE -->
+              <h5 class="card-title project-title">Airline Info Website (Internship Work)</h5>
+              <p class="card-text project-desc">
+                Maintained airline flight schedules, routes, and portal data with accurate database updates and clean UI layout.
+              </p>
+              <div class="project-badges mb-3 mt-auto">
+                <span class="badge tech-badge">HTML/CSS</span>
+                <span class="badge tech-badge">PHP</span>
+                <span class="badge tech-badge">MySQL</span>
+              </div>
+              <!-- REPLACE GITHUB LINK HERE -->
+              <a href="https://github.com/preetsingh-dev/airline-info-website" target="_blank" class="btn btn-outline-gold btn-sm w-100">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <!-- Replace images/project2.jpg with your project screenshot -->
+            <img src="images/project2.jpg" class="card-img-top project-img" alt="Student Management System">
+            <div class="card-body d-flex flex-column">
+              <!-- WRITE PROJECT NAME HERE -->
+              <h5 class="card-title project-title">Student Management System (PHP + MySQL)</h5>
+              <p class="card-text project-desc">
+                A CRUD web application to add, edit, search, and delete student records stored in a MySQL database.
+              </p>
+              <div class="project-badges mb-3 mt-auto">
+                <span class="badge tech-badge">PHP</span>
+                <span class="badge tech-badge">MySQL</span>
+                <span class="badge tech-badge">Bootstrap 5</span>
+              </div>
+              <!-- REPLACE GITHUB LINK HERE -->
+              <a href="https://github.com/preetsingh-dev/student-management-system" target="_blank" class="btn btn-outline-gold btn-sm w-100">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <!-- Replace images/project3.jpg with your project screenshot -->
+            <img src="images/project3.jpg" class="card-img-top project-img" alt="Todo App React.js">
+            <div class="card-body d-flex flex-column">
+              <!-- WRITE PROJECT NAME HERE -->
+              <h5 class="card-title project-title">Todo App (React.js)</h5>
+              <p class="card-text project-desc">
+                Simple task manager built with React.js to add, complete, filter, and delete daily tasks easily.
+              </p>
+              <div class="project-badges mb-3 mt-auto">
+                <span class="badge tech-badge">React.js</span>
+                <span class="badge tech-badge">JavaScript</span>
+                <span class="badge tech-badge">CSS</span>
+              </div>
+              <!-- REPLACE GITHUB LINK HERE -->
+              <a href="https://github.com/preetsingh-dev/react-todo-app" target="_blank" class="btn btn-outline-gold btn-sm w-100">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <!-- Replace images/project4.jpg with your project screenshot -->
+            <img src="images/project4.jpg" class="card-img-top project-img" alt="Personal Portfolio Website">
+            <div class="card-body d-flex flex-column">
+              <!-- WRITE PROJECT NAME HERE -->
+              <h5 class="card-title project-title">Personal Portfolio Website</h5>
+              <p class="card-text project-desc">
+                Responsive portfolio built with HTML, CSS, Bootstrap 5, JS, and a PHP/MySQL contact form.
+              </p>
+              <div class="project-badges mb-3 mt-auto">
+                <span class="badge tech-badge">HTML/CSS</span>
+                <span class="badge tech-badge">Bootstrap 5</span>
+                <span class="badge tech-badge">PHP/MySQL</span>
+              </div>
+              <!-- REPLACE GITHUB LINK HERE -->
+              <a href="https://github.com/preetsingh-dev/personal-portfolio" target="_blank" class="btn btn-outline-gold btn-sm w-100">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== PROJECTS SECTION END ===== -->
+
+
+  <!-- ===== CONTACT SECTION START ===== -->
+  <section id="contact" class="section-padding bg-offwhite fade-section">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="gold-line mx-auto"></div>
+        <p class="section-subtitle text-muted">Have a question or job opportunity? Send me a message!</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="royal-card p-4 p-md-5">
+
+            <!-- Success / Error Message Box -->
+            <div id="formMsg" class="alert d-none" role="alert"></div>
+
+            <!-- Contact Form: Submits to contact.php -->
+            <form id="myForm" action="contact.php" method="POST">
+              <!-- Name Field -->
+              <div class="mb-3">
+                <label for="nameInput" class="form-label fw-semibold">Your Name</label>
+                <input type="text" class="form-control custom-input" id="nameInput" name="name" placeholder="Enter your full name" required>
+              </div>
+
+              <!-- Email Field -->
+              <div class="mb-3">
+                <label for="emailInput" class="form-label fw-semibold">Your Email</label>
+                <input type="email" class="form-control custom-input" id="emailInput" name="email" placeholder="Enter your email address" required>
+              </div>
+
+              <!-- Message Field -->
+              <div class="mb-4">
+                <label for="msgInput" class="form-label fw-semibold">Your Message</label>
+                <textarea class="form-control custom-input" id="msgInput" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submitBtn" class="btn btn-gold w-100 py-2">
+                <i class="bi bi-send-fill me-2"></i>Send Message
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CONTACT SECTION END ===== -->
+
+
+  <!-- ===== FOOTER START ===== -->
+  <footer class="footer-section text-center py-4">
+    <div class="container">
+      <!-- Social Links -->
+      <div class="social-links mb-3">
+        <!-- REPLACE GITHUB LINK HERE -->
+        <a href="https://github.com/preetsingh-dev" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <!-- REPLACE LINKEDIN LINK HERE -->
+        <a href="https://linkedin.com/in/preet-singh" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <!-- WRITE YOUR EMAIL HERE -->
+        <a href="mailto:08preetsingh@gmail.com" class="social-icon" aria-label="Email">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </div>
+
+      <!-- Small Download Resume Link in Footer -->
+      <p class="mb-2">
+        <a href="resume/Preet_Singh_Resume_Developer.pdf" download class="footer-resume-link">
+          <i class="bi bi-download me-1"></i>Download Resume (PDF)
+        </a>
+      </p>
+
+      <!-- Copyright -->
+      <p class="footer-copy mb-0">
+        <!-- WRITE YOUR NAME HERE -->
+        &copy; 2026 Preet Singh. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- ===== FOOTER END ===== -->
+
+
+  <!-- ===== BACK TO TOP BUTTON START ===== -->
+  <button id="backToTopBtn" class="back-to-top" title="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  <!-- ===== BACK TO TOP BUTTON END ===== -->
+
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
