@@ -176,13 +176,48 @@ myForm.addEventListener("submit", function (event) {
 });
 
 // Check URL query parameter after contact.php redirects back
-function checkFormStatus() {
-  var params = new URLSearchParams(window.location.search);
-  var status = params.get("status");
+var myForm = document.getElementById("myForm");
 
-  if (status == "success") {
-    showMsg("Thank you! Your message has been sent and saved.", "success");
-  } else if (status == "error") {
-    showMsg("Sorry! Something went wrong while saving your message. Please try again.", "error");
+myForm.addEventListener("submit", async function (event) {
+  event.preventDefault();
+
+  var name1 = document.getElementById("nameInput").value.trim();
+  var email1 = document.getElementById("emailInput").value.trim();
+  var msg1 = document.getElementById("msgInput").value.trim();
+
+  if (name1 == "" || email1 == "" || msg1 == "") {
+    showMsg("Please fill in all fields before sending.", "error");
+    return;
   }
-}
+  if (email1.indexOf("@") == -1 || email1.indexOf(".") == -1) {
+    showMsg("Please enter a valid email address.", "error");
+    return;
+  }
+  if (msg1.length < 5) {
+    showMsg("Please write a slightly longer message.", "error");
+    return;
+  }
+
+  var btn = document.getElementById("submitBtn");
+  btn.disabled = true;
+
+  try {
+    var response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: new FormData(myForm)
+    });
+    var result = await response.json();
+
+    if (result.success) {
+      showMsg("Thank you! Your message has been sent.", "success");
+      myForm.reset();
+    } else {
+      showMsg("Sorry! Something went wrong. Please try again.", "error");
+    }
+  } catch (err) {
+    showMsg("Network error. Please try again.", "error");
+  }
+
+  btn.disabled = false;
+});
